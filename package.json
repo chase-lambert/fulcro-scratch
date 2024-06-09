@@ -1,0 +1,23 @@
+{
+  "name": "fulcro-scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "shadow-cljs release app",
+    "server": "clojure -T:build uber",
+    "tw": "npx tailwindcss -i ./resources/tailwind.css -o ./resources/public/css/main.css --watch",
+    "tailwind": "npx tailwindcss -i ./resources/tailwind.css -o ./resources/public/css/main.css --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@multiplyco/tailwind-clj": "^1.0.3",
+    "shadow-cljs": "2.28.7",
+    "tailwindcss": "3.4.3"
+  }
+}
